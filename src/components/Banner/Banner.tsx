@@ -1,5 +1,6 @@
 import Image from "next/image";
 import img from "../../../public/Programming-amico.png";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -13,13 +14,14 @@ const Banner = () => {
             MERN stack developer
           </h2>
           <p className=" mb-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-            Eligendi maxime, quaerat reprehenderit iure neque dolores <br />
-            sed aspernatur maiores mollitia culpa.
+            Passionate web developer dedicated to building seamless, <br />
+            high-performance websites that enhance user experience.
           </p>
-          <button className="btn btn-outline border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white py-2 px-4 rounded transition duration-300">
-            About Me
-          </button>
+          <Link href="/about">
+            <button className="btn btn-outline border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white py-2 px-4 rounded transition duration-300">
+              About Me
+            </button>
+          </Link>
         </div>
         <div className="flex justify-center md:flex-1 w-full">
           <Image

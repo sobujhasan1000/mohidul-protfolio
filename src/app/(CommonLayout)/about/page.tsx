@@ -3,7 +3,7 @@ import myPhoto from "../../../../public/myPhoto.png";
 
 const pageAbout = () => {
   return (
-    <div className="py-12 bg-gray-100">
+    <div className="py-12 bg-slate-800 text-white">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="w-full md:w-1/2 mb-8 md:mb-0">
           <Image
@@ -11,15 +11,15 @@ const pageAbout = () => {
             height={400}
             src={myPhoto}
             alt="My Photo"
-            className="rounded-lg shadow-lg"
+            className="rounded-full shadow-lg"
           />
         </div>
         <div className="w-full md:w-1/2 text-center md:text-left">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
-          <h3 className="text-xl text-gray-600 mb-6">
+          <h2 className="text-3xl font-bold  mb-4">About Me</h2>
+          <h3 className="text-xl  mb-6">
             Get a website that will make a lasting impression on your audience
           </h3>
-          <div className="bg-slate-400 p-6 rounded-lg shadow-md text-lg text-gray-700 mb-6">
+          <div className="bg-slate-400 p-6 rounded-lg shadow-md text-lg text-slate-800 mb-6">
             <div className="grid grid-cols-2">
               <div>
                 <p>
