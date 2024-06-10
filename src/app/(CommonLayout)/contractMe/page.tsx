@@ -64,7 +64,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="py-12 bg-gray-100">
+    <div className="py-12 bg-slate-700">
       <div className="container mx-auto max-w-lg p-8 bg-white shadow-md rounded-lg">
         <h1 className="text-2xl font-bold mb-6 text-center">Contact Me</h1>
         <form onSubmit={handleSubmit}>

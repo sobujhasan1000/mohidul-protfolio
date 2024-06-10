@@ -6,7 +6,11 @@ const Navbar = () => {
       <div className="navbar bg-[rgb(42,16,58)]">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-success lg:hidden"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -53,7 +57,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Hire me</a>
+          <Link href="/contractMe" className="btn">
+            Hire me
+          </Link>
         </div>
       </div>
     </div>
