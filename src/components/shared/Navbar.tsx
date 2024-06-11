@@ -3,7 +3,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-[rgb(42,16,58)]">
+      <div className="navbar  bg-[rgba(206,84,151,0.73)]">
         <div className="navbar-start">
           <div className="dropdown">
             <div
