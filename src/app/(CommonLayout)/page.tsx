@@ -1,15 +1,19 @@
 import Banner from "@/components/Banner/Banner";
-import Footer from "@/components/Footer/Footer";
-import Blog from "@/components/blogs/Blog";
+
 import Project from "@/components/projectArea/Project";
 import Skill, { NewSkill } from "@/components/skill/Skill";
+import Blog, { BlogPost } from "@/components/blogs/Blog";
 
 const Homepage = async () => {
-  const res = await fetch(`${process.env.API_URL}/api/skill`);
-  const data = await res.json();
+  // Fetch skills
+  const skillRes = await fetch(`${process.env.API_URL}/api/skill`);
+  const skillData = await skillRes.json();
+  const skills: NewSkill[] = skillData.skill;
 
-  // Extract the skill array from the data
-  const skills: NewSkill[] = data.skill;
+  // Fetch blogs
+  const blogRes = await fetch(`${process.env.API_URL}/api/blog`);
+  const blogData = await blogRes.json();
+  const blogs: BlogPost[] = blogData.blog;
 
   return (
     <div className="bg-[#161516]">
@@ -17,7 +21,7 @@ const Homepage = async () => {
         <Banner />
         <Skill skills={skills} />
         <Project />
-        <Blog />
+        <Blog blogs={blogs} />
       </div>
     </div>
   );

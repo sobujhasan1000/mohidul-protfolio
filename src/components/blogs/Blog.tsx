@@ -1,33 +1,38 @@
-import { title } from "process";
+// const blogs = [
+// import { BlogPost } from '@/components/blogs/Blog';
+//   {
+//     heading: "This is my blog headin",
+//     title: "blog title",
+//     details:
+//       "lorem20 Lorem ipsum dolor sit amettetur adipisicing elit A nostrum voluptatem cupiditateEveniet voluptas odio impedit repellat, ipsam voluptatem! ",
+//   },
+//   {
+//     heading: "This is my blog headin",
+//     title: "blog title",
+//     details:
+//       "lorem20 Lorem ipsum dolor sit amettetur adipisicing elit A nostrum voluptatem cupiditateEveniet voluptas odio impedit repellat, ipsam voluptatem! ",
+//   },
+//   {
+//     heading: "This is my blog headin",
+//     title: "blog title",
+//     details:
+//       "lorem20 Lorem ipsum dolor sit amettetur adipisicing elit A nostrum voluptatem cupiditateEveniet voluptas odio impedit repellat, ipsam voluptatem! ",
+//   },
+//   {
+//     heading: "This is my blog headin",
+//     title: "blog title",
+//     details:
+//       "lorem20 Lorem ipsum dolor sit amettetur adipisicing elit A nostrum voluptatem cupiditateEveniet voluptas odio impedit repellat, ipsam voluptatem! ",
+//   },
+// ];
 
-const blogs = [
-  {
-    heading: "This is my blog headin",
-    title: "blog title",
-    details:
-      "lorem20 Lorem ipsum dolor sit amettetur adipisicing elit A nostrum voluptatem cupiditateEveniet voluptas odio impedit repellat, ipsam voluptatem! ",
-  },
-  {
-    heading: "This is my blog headin",
-    title: "blog title",
-    details:
-      "lorem20 Lorem ipsum dolor sit amettetur adipisicing elit A nostrum voluptatem cupiditateEveniet voluptas odio impedit repellat, ipsam voluptatem! ",
-  },
-  {
-    heading: "This is my blog headin",
-    title: "blog title",
-    details:
-      "lorem20 Lorem ipsum dolor sit amettetur adipisicing elit A nostrum voluptatem cupiditateEveniet voluptas odio impedit repellat, ipsam voluptatem! ",
-  },
-  {
-    heading: "This is my blog headin",
-    title: "blog title",
-    details:
-      "lorem20 Lorem ipsum dolor sit amettetur adipisicing elit A nostrum voluptatem cupiditateEveniet voluptas odio impedit repellat, ipsam voluptatem! ",
-  },
-];
+export interface BlogPost {
+  heading: string;
+  title: string;
+  details: string;
+}
 
-const Blog = () => {
+const Blog = ({ blogs }: { blogs: BlogPost[] }) => {
   return (
     <div className="py-12 bg-gradient-to-r from-[#0a0909] via-[rgb(42,16,58)] to-[#000000]">
       <h1 className="text-center text-4xl font-bold mb-8 text-white">
