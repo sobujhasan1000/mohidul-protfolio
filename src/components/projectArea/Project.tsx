@@ -1,6 +1,6 @@
 import Image from "next/image";
-import webLaptops from "../../../public/screenShot web/chemisty shot.png";
-import webChemistry from "../../../public/screenShot web/laptops web screenshot.png";
+import webChemistry from "../../../public/screenShot web/chemisty shot.png";
+import webLaptops from "../../../public/screenShot web/laptops web screenshot.png";
 
 const Project = () => {
   return (
@@ -10,7 +10,9 @@ const Project = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 max-w-6xl mx-auto">
         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105">
-          <h2 className="text-2xl font-semibold mb-4">Project 1</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-center">
+            Dating site
+          </h2>
           <div className="overflow-hidden rounded-lg h-64">
             <div className="relative group h-full">
               <Image
@@ -22,7 +24,7 @@ const Project = () => {
           </div>
           <div className="flex justify-around mt-4">
             <a
-              href="https://github.com/yourusername/project1"
+              href="https://github.com/sobujhasan1000/chemistry-corner"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition"
@@ -30,7 +32,7 @@ const Project = () => {
               GitHub
             </a>
             <a
-              href="https://live-link.com/project1"
+              href="https://chemistry-corner-client.web.app"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 transition"
@@ -40,7 +42,9 @@ const Project = () => {
           </div>
         </div>
         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105">
-          <h2 className="text-2xl font-semibold mb-4">Project 2</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-center">
+            eCommerce site
+          </h2>
           <div className="overflow-hidden rounded-lg h-64">
             <div className="relative group h-full">
               <Image
@@ -52,7 +56,7 @@ const Project = () => {
           </div>
           <div className="flex justify-around mt-4">
             <a
-              href="https://github.com/yourusername/project2"
+              href="https://github.com/sobujhasan1000/L2-assingment-eight"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition"
@@ -60,7 +64,7 @@ const Project = () => {
               GitHub
             </a>
             <a
-              href="https://live-link.com/project2"
+              href="https://assingment-eight-ten.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 transition"

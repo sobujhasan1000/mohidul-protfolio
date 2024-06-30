@@ -3,7 +3,7 @@ import myPhoto from "../../../../public/myPhoto.png";
 
 const pageAbout = () => {
   return (
-    <div className="py-12 bg-slate-800 text-white">
+    <div className="py-4 bg-slate-800 text-white">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="w-full md:w-1/2 mb-8 md:mb-0">
           <Image
