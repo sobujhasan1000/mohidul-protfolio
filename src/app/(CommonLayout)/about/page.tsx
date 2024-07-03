@@ -1,5 +1,6 @@
 import Image from "next/image";
 import myPhoto from "../../../../public/myPhoto.png";
+import Link from "next/link";
 
 const pageAbout = () => {
   return (
@@ -26,13 +27,13 @@ const pageAbout = () => {
                   <strong>
                     Name: <br />
                   </strong>{" "}
-                  Your Name
+                  Md Mohidul Islam
                 </p>
                 <p>
                   <strong>
                     Phone: <br />
                   </strong>{" "}
-                  (123) 456-7890
+                  (+880) 01740121418
                 </p>
               </div>
               <div>
@@ -40,23 +41,28 @@ const pageAbout = () => {
                   <strong>
                     Email: <br />
                   </strong>{" "}
-                  youremail@example.com
+                  sobujhasan1000@gmail.com
                 </p>
                 <p>
                   <strong>
                     LinkedIn: <br />
                   </strong>{" "}
-                  <a href="https://linkedin.com" className="text-blue-500">
-                    linkedin.com
+                  <a
+                    href="https://www.linkedin.com/in/mohidul-is"
+                    className="text-blue-500"
+                  >
+                    Linkdin Profile
                   </a>
                 </p>
               </div>
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-center md:justify-start gap-4">
-            <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition">
-              Contact Me
-            </button>
+            <Link href="/contractMe">
+              <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition">
+                Contact Me
+              </button>
+            </Link>
             <button className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition">
               <a href="/MD MOHIDUL ISLAM frontend developer.pdf" download>
                 Download Resume

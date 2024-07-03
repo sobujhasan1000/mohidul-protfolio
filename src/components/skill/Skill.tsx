@@ -10,10 +10,10 @@ const Skill = ({ skills }: { skills: NewSkill[] }) => {
   // console.log(skills);
   return (
     <div className="py-8">
-      <h1 className="text-center text-4xl font-bold mb-8 text-white">
-        MY WORK SKILLS
+      <h1 className="text-center text-2xl font-bold mb-8 text-white">
+        MY SKILLS
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 px-4  mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 px-4  mx-auto">
         {skills.map((skill) => (
           <div
             key={skill.name}
