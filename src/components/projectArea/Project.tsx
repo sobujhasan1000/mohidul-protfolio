@@ -23,7 +23,7 @@ const Project = () => {
               <Image
                 src={webChemistry}
                 alt="Project 1"
-                className="w-full h-auto transition-transform duration-[10000ms] group-hover:translate-y-[-75%]"
+                className="w-full h-auto transition-transform duration-1000 group-hover:translate-y-[-75%]"
               />
             </div>
           </div>
@@ -61,7 +61,7 @@ const Project = () => {
               <Image
                 src={webLaptops}
                 alt="Project 2"
-                className="w-full h-auto transition-transform duration-[10000ms] group-hover:translate-y-[-75%]"
+                className="w-full h-auto transition-transform duration-1000 group-hover:translate-y-[-75%]"
               />
             </div>
           </div>
