@@ -16,8 +16,8 @@ const Homepage = async () => {
   const blogs: BlogPost[] = blogData.blog;
 
   return (
-    <div className="bg-[#161516]">
-      <div className="mx-4">
+    <div className="">
+      <div className=" bg-[#C6DEFF]">
         <Banner />
         <Skill skills={skills} />
         <Project />

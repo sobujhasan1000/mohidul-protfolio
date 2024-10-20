@@ -3,7 +3,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar  bg-[rgba(206,84,151,0.73)]">
+      <div className="navbar  bg-[#ADDFFF]">
         <div className="navbar-start">
           <div className="dropdown">
             <div
@@ -28,7 +28,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black"
             >
               <li>
                 <Link href="/">Home</Link>
@@ -41,10 +41,10 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl text-white">MOhidul</a>
+          <a className="btn btn-ghost text-xl text-black">MOhidul</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-white">
+          <ul className="menu menu-horizontal px-1 text-black">
             <li>
               <Link href="/">Home</Link>
             </li>

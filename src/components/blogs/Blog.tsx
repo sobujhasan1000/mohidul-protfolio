@@ -22,7 +22,7 @@ const Blog = ({ blogs }: { blogs: BlogPost[] }) => {
   };
 
   return (
-    <div className="py-12 bg-gradient-to-r from-[#0a0909] via-[rgb(42,16,58)] to-[#000000]">
+    <div className="py-12 bg-[#AFDCEC]">
       <h1 className="text-center text-4xl font-bold mb-8 text-white">
         My Blog Area
       </h1>

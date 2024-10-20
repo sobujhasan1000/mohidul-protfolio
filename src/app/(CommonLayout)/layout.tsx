@@ -3,7 +3,7 @@ import Navbar from "@/components/shared/Navbar";
 
 const CommonLayOut = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div>
+    <div className="mx-2">
       <Navbar />
       {children}
       <Footer />

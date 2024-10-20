@@ -5,8 +5,8 @@ import Link from "next/link";
 const Banner = () => {
   return (
     <div className="flex flex-col items-center justify-center  mt-0 ">
-      <div className=" text-white flex flex-col md:flex-row items-center bg-gradient-to-r from-[#0a0909] via-[rgb(42,16,58)] to-[#000000] p-10 rounded-lg shadow-md max-w-4xl lg:min-w-full">
-        <div className="text-center md:text-left md:flex-1  md:mb-0  text-white ">
+      <div className=" text-black flex flex-col md:flex-row items-center bg-[#BDEDFF] p-10 rounded-lg shadow-md max-w-4xl lg:min-w-full">
+        <div className="text-center md:text-left md:flex-1  md:mb-0  text-black ">
           <h1 className="text-xl   mb-4">Hello</h1>
           <h2 className="text-3xl font-semibold mb-4">
             I am
