@@ -41,7 +41,7 @@ const Banner = () => {
     <div className="flex flex-col items-center justify-between  mt-0 ">
       <div className=" text-black flex flex-col md:flex-row items-center bg-[#BDEDFF] px-10 rounded-lg shadow-md max-w-4xl lg:min-w-full">
         <div className="text-center md:text-left md:flex-1  md:mb-0  text-black ">
-          <h1 className="text-xl   mb-4">Hello</h1>
+          <h1 className="text-2xl font-bold   mb-4 text-pink-400">Hi</h1>
           <h2 className="text-3xl font-semibold mb-4">
             I am
             <span className="text-pink-400"> Mohidul Islam </span> <br />
