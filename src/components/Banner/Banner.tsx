@@ -1,8 +1,16 @@
+"use client";
 import Image from "next/image";
 import img from "../../../public/Programming-amico.png";
 import Link from "next/link";
 import IconCloud from "../ui/icon-cloud";
+import { Typed } from "react-typed";
+import { useEffect, useState } from "react";
 
+const roles: string[] = [
+  "MERN stack developer",
+  "Next.js developer",
+  "Frontend developer",
+];
 const slugs = [
   "typescript",
   "javascript",
@@ -36,7 +44,16 @@ const slugs = [
   "figma",
 ];
 
-const Banner = () => {
+const Banner: React.FC = () => {
+  const [index, setIndex] = useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % roles.length);
+    }, 3000); // Change role every 2 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
   return (
     <div className="flex flex-col items-center justify-between  mt-0 ">
       <div className=" text-black flex flex-col md:flex-row items-center bg-[#BDEDFF] px-10 rounded-lg shadow-md max-w-4xl lg:min-w-full">
@@ -45,7 +62,7 @@ const Banner = () => {
           <h2 className="text-3xl font-semibold mb-4">
             I am
             <span className="text-pink-400"> Mohidul Islam </span> <br />
-            MERN stack developer
+            {roles[index]}
           </h2>
           <p className=" mb-6">
             Passionate web developer dedicated to building seamless, <br />
