@@ -1,10 +1,12 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 export interface BlogPost {
   heading: string;
   title: string;
   details: string;
+  image: string;
 }
 
 const Blog = ({ blogs }: { blogs: BlogPost[] }) => {
@@ -35,6 +37,18 @@ const Blog = ({ blogs }: { blogs: BlogPost[] }) => {
             <h1 className="text-xl font-semibold mb-2 text-indigo-700 text-center">
               {blog.heading}
             </h1>
+
+            {/* Optimized Image */}
+            <div className="relative w-full h-48 mb-4">
+              <Image
+                src={blog.image} // Image URL
+                alt={blog.heading}
+                layout="fill" // Fill the parent container
+                objectFit="cover" // Crop and scale the image properly
+                className="rounded-md"
+              />
+            </div>
+
             <h2 className="text-lg font-medium text-gray-700">{blog.title}</h2>
             <p className="text-gray-600 mb-4">
               {blog.details.slice(0, 100)}...
