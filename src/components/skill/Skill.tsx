@@ -57,7 +57,7 @@ const SkillMarquee = ({ skills }: { skills: NewSkill[] }) => {
   const secondRow = skills.slice(skills.length / 2);
 
   return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-[#C2DFFF] md:shadow-xl">
+    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-[#62686d] md:shadow-xl">
       {/* First Row Marquee */}
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((skill) => (

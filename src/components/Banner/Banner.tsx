@@ -55,13 +55,13 @@ const Banner: React.FC = () => {
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
   return (
-    <div className="flex flex-col items-center justify-between  mt-0 ">
-      <div className=" text-black flex flex-col md:flex-row items-center bg-[#BDEDFF] px-10 rounded-lg shadow-md max-w-4xl lg:min-w-full">
-        <div className="text-center md:text-left md:flex-1  md:mb-0  text-black ">
-          <h1 className="text-2xl font-bold   mb-4 text-pink-400">Hi</h1>
+    <div className="flex flex-col items-center justify-between  mt-0 text-white ">
+      <div className=" text-black flex flex-col md:flex-row items-center bg-[#1F2833] px-10 rounded-lg shadow-md max-w-4xl lg:min-w-full">
+        <div className="text-center md:text-left md:flex-1  md:mb-0  text-white ">
+          <h1 className="text-2xl font-bold   mb-4 text-red-400">Hi</h1>
           <h2 className="text-3xl font-semibold mb-4">
             I am
-            <span className="text-pink-400"> Mohidul Islam </span> <br />
+            <span className=""> Mohidul Islam </span> <br />
             {roles[index]}
           </h2>
           <p className=" mb-6">
@@ -69,7 +69,7 @@ const Banner: React.FC = () => {
             high-performance websites that enhance user experience.
           </p>
           <Link href="/about">
-            <button className="btn btn-outline border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white py-2 px-4 rounded transition duration-300">
+            <button className="btn btn-info text-white border-2 border-blue-500  hover:bg-blue-500 hover:text-white py-2 px-4 rounded transition duration-300">
               About Me
             </button>
           </Link>

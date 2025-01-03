@@ -3,13 +3,13 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar  bg-[#ADDFFF]">
+      <div className="navbar  bg-[#0b0c10] text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-success lg:hidden"
+              className="btn border-t-cyan-300 lg:hidden"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-52"
             >
               <li>
                 <Link href="/">Home</Link>
@@ -43,8 +43,8 @@ const Navbar = () => {
           </div>
           <a className="btn btn-ghost text-xl text-black">MOhidul</a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-black">
+        <div className="navbar-center hidden lg:flex ">
+          <ul className="menu menu-horizontal px-1  ">
             <li>
               <Link href="/">Home</Link>
             </li>
