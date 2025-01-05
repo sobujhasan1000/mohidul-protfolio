@@ -22,7 +22,7 @@ const SkillCard = ({
       className={cn(
         "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles
-        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+        "border-white-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
@@ -57,7 +57,7 @@ const SkillMarquee = ({ skills }: { skills: NewSkill[] }) => {
   const secondRow = skills.slice(skills.length / 2);
 
   return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-[#62686d] md:shadow-xl">
+    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-[#98afc0] md:shadow-xl">
       {/* First Row Marquee */}
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((skill) => (
@@ -73,8 +73,8 @@ const SkillMarquee = ({ skills }: { skills: NewSkill[] }) => {
       </Marquee>
 
       {/* Left and Right Gradients */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#606867] dark:from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[#606867] dark:from-background"></div>
     </div>
   );
 };
