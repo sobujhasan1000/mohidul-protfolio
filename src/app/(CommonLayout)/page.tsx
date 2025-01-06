@@ -17,7 +17,7 @@ const Homepage = async () => {
 
   return (
     <div className="">
-      <div className=" bg-[#C6DEFF]">
+      <div className=" bg-[#545b68]">
         <Banner />
         <Skill skills={skills} />
         <Project />
