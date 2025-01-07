@@ -56,7 +56,7 @@ const Banner: React.FC = () => {
   }, []);
   return (
     <div className="flex flex-col items-center justify-between  mt-0 text-white ">
-      <div className=" text-black flex flex-col md:flex-row items-center bg-[#1F2833] px-10 rounded-lg shadow-md max-w-4xl lg:min-w-full">
+      <div className=" text-black flex flex-col md:flex-row items-center bg-[#667485] px-10 rounded-lg shadow-md max-w-4xl lg:min-w-full">
         <div className="text-center md:text-left md:flex-1  md:mb-0  text-white ">
           <h1 className="text-2xl font-bold   mb-4 text-red-400">Hi</h1>
           <h2 className="text-3xl font-semibold mb-4">

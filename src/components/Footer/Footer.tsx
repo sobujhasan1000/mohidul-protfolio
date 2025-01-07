@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer items-center p-4  bg-[#95ccee] text-neutral-content">
+      <footer className="footer items-center p-4  bg-[#676d70] text-neutral-content">
         <aside className="items-center grid-flow-col">
           <svg
             width="36"
